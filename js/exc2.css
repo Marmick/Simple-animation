@@ -1,0 +1,162 @@
+body{
+    background-image: url(back.jpg);
+}
+
+img{
+     position:relative;
+}
+
+button{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 500px;
+}
+
+
+
+.shakeCSS {
+    animation: shakeItBaby 1s  forwards;
+}
+
+@keyframes shakeItBaby {
+    25%{
+         transform:rotate(5deg);
+         }
+    50%{
+        transform: rotate(-5deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+
+.flashCSS{
+    animation: flash 1s ease infinite;
+}
+
+@keyframes flash{
+    40%{
+        opacity:0;
+    }
+}
+
+
+.moveRightCSS{
+    animation: moveItRight 2s forwards;
+        
+}
+
+@keyframes moveItRight{
+    100%{
+        transform: translateX(30vw);
+    }
+}
+
+
+.moveDownCSS{
+    animation: moveItDown 0.8s 1s linear forwards;
+}
+
+@keyframes moveItDown{
+         20%{
+         transform:translate(10vw, -12vh) rotate(75deg);
+         }
+    60%{
+        transform: translate(20vw, -5vh) rotate(90deg);
+    }
+    90%{
+        transform: translate(23vw,0vh) rotate(90deg);
+    }
+    95%{
+        transform: translate(23vw,20vh) rotate(90deg) scaleY(1.1);
+    }
+    100%{
+        transform: translate(23vw,49vh) rotate(90deg) scaleY(1);
+    }
+
+}
+
+
+.makeRotateCSS{
+    animation: makeItRotate 1s infinite;
+}
+
+@keyframes makeItRotate{
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+.makeScaleCSS{
+    animation: makeItScale 1s infinite;
+}
+
+@keyframes makeItScale{
+    70%{
+        transform: scaleX(0.2)
+    }
+}
+
+.makeMoveCSS{ 
+    animation: move 1s linear infinite alternate;
+    } 
+    
+@keyframes move{
+    100%{
+        transform: translate(80vw,0);
+    }
+}
+
+.makeMirrorCSS{
+    animation: mirror 1s 1s linear forwards;
+    margin-left: 38%;
+}
+
+@keyframes mirror{
+    to{
+        transform: scaleX(-1)
+    }
+}
+
+.makeJumpCSS{
+    animation: jumping 0.3s infinite ease-out alternate;
+    margin-left: 38%;
+}
+
+@keyframes jumping{
+    100%{
+        top:20%;
+    } 
+}
+
+
+.makeMoveFrom30CSS{
+    animation: moveFrom30 1s forwards;
+    margin-left: 38%;
+}
+
+@keyframes moveFrom30{
+    100%{
+        transform: translateX(-385px);
+    } 
+}
+
+.makeRadiusCSS{
+    animation: makeRadius 1s forwards;
+}
+
+@keyframes makeRadius{
+    100%{
+        border-radius:50%;
+    } 
+}
+
+
+
+
+
